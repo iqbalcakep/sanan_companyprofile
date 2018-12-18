@@ -39,17 +39,9 @@
 				</ul>
 			</div>
 			<div class="col-lg-3 col-md-6 single-footer-widget">
-				<h4>Instragram Feed</h4>
-				<ul class="instafeed d-flex flex-wrap">
-					<li><img src="img/i1.jpg" alt=""></li>
-					<li><img src="img/i2.jpg" alt=""></li>
-					<li><img src="img/i3.jpg" alt=""></li>
-					<li><img src="img/i4.jpg" alt=""></li>
-					<li><img src="img/i5.jpg" alt=""></li>
-					<li><img src="img/i6.jpg" alt=""></li>
-					<li><img src="img/i7.jpg" alt=""></li>
-					<li><img src="img/i8.jpg" alt=""></li>
-				</ul>
+				<h4>Ikuti Kami</h4>
+
+				<style>video.labnol, img.labnol {max-width:100%; width: 100% !important; height: auto !important;}</style> <img class='labnol' src='https://instagram.fsjc1-3.fna.fbcdn.net/vp/60e53f05f0f3f20840625951c2b301da/5CD70709/t51.2885-15/e35/43508346_254875781817693_7886843230753211370_n.jpg?_nc_ht=instagram.fsjc1-3.fna.fbcdn.net' width='1080' height='1081' />Credit: @<a href='https://instagram.com/miqbalrr_'>Muhammad Iqbal Rofiqurrahman</a>
 			</div>
 		</div>
 		<div class="footer-bottom row align-items-center">

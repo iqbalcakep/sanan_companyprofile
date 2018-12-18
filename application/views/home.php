@@ -157,7 +157,12 @@
 							<!-- Start popular-post Area -->
 							<div class="popular-post-wrap">
 								<h4 class="title">Dokumen Kami</h4>
-						
+									<br>
+										<ul>
+											<?php foreach($file as $f){ ?>
+											<li><a href="#"><?= $f->judul_file; ?></li>
+											<?php } ?>
+										</ul>
 							</div>
 							<!-- End popular-post Area -->
 						</div>

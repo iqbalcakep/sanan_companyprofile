@@ -11,10 +11,14 @@ class Home extends CI_Controller {
 		 $this->load->model('berita_model');
 		 $this->load->model('produk_model');
 		 $this->load->model('galeri_model');
+		 
+		
     }
 
 	public function index()
 	{
+		
+            
 		$urlfoto = $this->galeri_model->getUrlFotoAwal();
 		$urlvideo = $this->galeri_model->getUrlVideoAwal();
 		$data["foto"] = json_decode($this->curl->simple_get($this->IG.$urlfoto));
@@ -22,6 +26,7 @@ class Home extends CI_Controller {
 		$data["berita"] = $this->berita_model->getBeritaTerbaru();
 		$data["produklast"] = $this->produk_model->getProdukTerakhir();
 		$data["produk"] = $this->produk_model->getProduk();
+		$data["file"]=$this->galeri_model->getSemuaFile();
 		$this->load->view('home',$data);
 		//var_dump($data);
 	}

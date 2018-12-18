@@ -38,16 +38,16 @@
 		<div class="row align-items-center justify-content-between">
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
-					<li><a href="<?php echo base_url() ?>index.php/home">Beranda</a></li>
+					<li><a href="<?php echo base_url() ?>home">Beranda</a></li>
 					<li><a href="#">Penjualan</a></li>
 					<li class="menu-has-children"><a href="">Galeri</a>
 						<ul>
-							<li><a href="<?php echo base_url() ?>index.php/galeriFoto">Galeri Foto</a></li>
-							<li><a href="<?php echo base_url() ?>index.php/galeriVideo">Galeri Video</a></li>
+							<li><a href="<?php echo base_url() ?>galeriFoto">Galeri Foto</a></li>
+							<li><a href="<?php echo base_url() ?>galeriVideo">Galeri Video</a></li>
 						</ul>
 					</li>
-					<li><a href="<?php echo base_url() ?>index.php/about">Tentang Kami</a></li>
-					<li><a href="<?php echo base_url() ?>index.php/contact">Kontak Kami</a></li>
+					<li><a href="<?php echo base_url() ?>about">Tentang Kami</a></li>
+					<li><a href="<?php echo base_url() ?>contact">Kontak Kami</a></li>
 				</ul>
 			</nav><!-- #nav-menu-container -->
 			<div class="navbar-right">

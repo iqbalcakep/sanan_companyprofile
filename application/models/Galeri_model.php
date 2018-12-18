@@ -36,4 +36,11 @@ class Galeri_model extends CI_Model {
             return $this->db->get()->result();
         }
 
+    public function getSemuaFile(){
+        $this->db->select("*");
+            $this->db->from("sanan_galerifile");
+            $this->db->order_by("id_file asc");
+            return $this->db->get()->result();
+    }
+
 }
