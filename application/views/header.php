@@ -24,8 +24,9 @@
 			<div class="row justify-content-between align-items-center">
 				<div class="col-lg-4 col-md-4 col-sm-12 logo-left no-padding">
 					<a href="index.html">
-						<img class="img-fluid" src="img/logo.png" alt="">
+						<img src="<?php echo base_url() ?>assets/img/logosanan.jpg" width=25%>
 					</a>
+					<b>	Kripik Tempe Sanan</b>
 				</div>
 				<div class="col-lg-8 col-md-8 col-sm-12 logo-right no-padding ads-banner">
 					<img class="img-fluid" src="img/banner-ad.jpg" alt="">
@@ -37,18 +38,17 @@
 		<div class="row align-items-center justify-content-between">
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
-					<li><a href="<?php echo base_url() ?>index.php/home">Home</a></li>
-					<li><a href="<?php echo base_url() ?>index.php/blog">Blog Artikel</a></li>
-					<li class="menu-has-children"><a href="">Tipe Post</a>
-					<ul>
-						<li><a href="<?php echo base_url() ?>index.php/post/noimage">No Image Post</a></li>
-						<li><a href="<?php echo base_url() ?>index.php/post/image">Image Post</a></li>
-						<li><a href="<?php echo base_url() ?>index.php/post/video">Video Post</a></li>
-					</ul>
-				</li>
-				<li><a href="<?php echo base_url() ?>index.php/about">About Us</a></li>
-				<li><a href="<?php echo base_url() ?>index.php/contact">Contact Us</a></li>
-			</ul>
+					<li><a href="<?php echo base_url() ?>index.php/home">Beranda</a></li>
+					<li><a href="#">Penjualan</a></li>
+					<li class="menu-has-children"><a href="">Galeri</a>
+						<ul>
+							<li><a href="<?php echo base_url() ?>index.php/galerifoto">Galeri Foto</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/galerivideo">Galeri Video</a></li>
+						</ul>
+					</li>
+					<li><a href="<?php echo base_url() ?>index.php/about">Tentang Kami</a></li>
+					<li><a href="<?php echo base_url() ?>index.php/contact">Kontak Kami</a></li>
+				</ul>
 			</nav><!-- #nav-menu-container -->
 			<div class="navbar-right">
 				<form class="Search">

@@ -189,6 +189,10 @@ h3, .h3 {
   font-size: 24px;
 }
 
+h3, .h3 span{
+  text-align: center;
+}
+
 h4, .h4 {
   font-size: 18px;
 }
@@ -796,6 +800,13 @@ td, th {
 
 .no-padding {
   padding: 0;
+
+}
+.no-padding b{
+  padding-left: 10px;
+  color: #000;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
 .section-bg {
@@ -816,6 +827,7 @@ td, th {
 .small-gutters {
   margin-right: -5px;
   margin-left: -5px;
+  margin-top: 10px;
 }
 
 .small-gutters > [class*="col-"] {
@@ -1465,8 +1477,8 @@ body {
 
 .top-post-area .top-post-left .top-post-details {
   position: absolute;
-  bottom: 30px;
-  left: 40px;
+  bottom: 12px;
+  left: 12px;
 }
 
 @media (max-width: 767px) {
@@ -1584,6 +1596,17 @@ body {
     margin-bottom: 5px;
     margin-top: 5px;
   }
+}
+
+.top-post-left .meta li {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.top-post-left .meta li a{
+    color: #fff;
 }
 
 .top-post-area .top-post-right .single-top-post .top-post-details .meta li {
@@ -2470,7 +2493,7 @@ body {
   background-color: #f9f9ff;
 }
 
-.info-area:after {
+/*.info-area:after {
   position: absolute;
   content: "";
   top: 0;
@@ -2479,7 +2502,7 @@ body {
   height: 100%;
   background: url(../img/about/about-img.jpg) no-repeat center center/cover;
   z-index: 1;
-}
+}*/
 
 @media (max-width: 991px) {
   .info-area:after {
@@ -2498,10 +2521,12 @@ body {
 }
 
 .info-area .info-right {
-  max-width: 580px;
-  padding-left: 35px;
+  /*max-width: 580px;*/
+/*  padding-left: 35px;*/
 }
-
+/*.info-area .info-right img {
+  margin-left: 75px;
+}*/
 @media (max-width: 1024px) {
   .info-area .info-right {
     padding-left: 15px;

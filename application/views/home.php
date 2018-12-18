@@ -15,195 +15,138 @@
 		<meta charset="UTF-8">
 		<!-- Site Title -->
 		<title>Home - Sanan Tempe</title>
+		<style type="text/css">
+			.slider {
+/*			width: 1024px;
+			margin: 2em auto;*/
+			
+		}
+
+		.slider-wrapper {
+			width: 100%;
+			height: 400px;
+			position: relative;
+		}
+
+		.slide {
+			float: left;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 3s linear;
+		}
+
+		.slider-wrapper > .slide:first-child {
+			opacity: 1;
+		}
+
+		</style>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 		<?php 
 			include 'allcss.php'
 		?>
 	</head>
+	<?php $url_produk = "http://127.0.0.1/Sanan_project/Sanan_project/"; ?>
 	<body>
 		<?php include 'header.php' ?>
 		<div class="site-main-container">
+			<!-- Start info Area -->
+		<section class="info-area relative pt-10">
+			<div class="row align-items-center justify-content-end">
+				<div class="container no-padding">
+					<div class="row" style="margin:0">
+						<div class="col-lg-12 no-padding info-right">	
+							<div class="slider" id="main-slider"><!-- outermost container element -->
+								<div class="slider-wrapper"><!-- innermost wrapper element -->
+									<img src="<?php echo base_url() ?>assets/img/top-post1.jpg" alt="First" class="slide" /><!-- slides -->
+									<img src="<?php echo base_url() ?>assets/img/top-post2.jpg" alt="Second" class="slide" />
+									<img src="<?php echo base_url() ?>assets/img/top-post3.jpg" alt="Third" class="slide" />
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End info Area -->
 			<!-- Start top-post Area -->
 			<section class="top-post-area pt-10">
 				<div class="container no-padding">
 					<div class="row small-gutters">
 						<div class="col-lg-8 top-post-left">
 							<div class="feature-image-thumb relative">
-								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="<?php echo base_url() ?>assets/img/top-post1.jpg" alt="">
+							<iframe width="750" height="400" src="https://www.youtube.com/embed/<?= $video; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="top-post-details">
 								<ul class="tags">
-									<li><a href="#">Food Habit</a></li>
-								</ul>
-								<a href="image-post.html">
-									<h3>A Discount Toner Cartridge Is Better Than Ever.</h3>
-								</a>
-								<ul class="meta">
-									<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-									<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-									<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+									<li><a href="#">Video</a></li>
 								</ul>
 							</div>
 						</div>
+						
 						<div class="col-lg-4 top-post-right">
+				
 							<div class="single-top-post">
 								<div class="feature-image-thumb relative">
 									<div class="overlay overlay-bg"></div>
-									<img class="img-fluid" src="<?php echo base_url() ?>assets/img/top-post2.jpg" alt="">
+									<img height="100px" class="img-fluid" src="<?= $foto->thumbnail_url; ?>" alt="">
 								</div>
 								<div class="top-post-details">
 									<ul class="tags">
-										<li><a href="#">Food Habit</a></li>
+										<li><a href="#">Foto</a></li>
 									</ul>
-									<a href="image-post.html">
-										<h4>A Discount Toner Cartridge Is Better Than Ever.</h4>
+									<a href="#">
+										<h4><?= substr($foto->title,0,30); ?></h4>
 									</a>
-									<ul class="meta">
-										<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-										<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-										<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-									</ul>
 								</div>
 							</div>
-							<div class="single-top-post mt-10">
-								<div class="feature-image-thumb relative">
-									<div class="overlay overlay-bg"></div>
-									<img class="img-fluid" src="<?php echo base_url() ?>assets/img/top-post3.jpg" alt="">
-								</div>
-								<div class="top-post-details">
-									<ul class="tags">
-										<li><a href="#">Food Habit</a></li>
-									</ul>
-									<a href="image-post.html">
-										<h4>A Discount Toner Cartridge Is Better</h4>
-									</a>
-									<ul class="meta">
-										<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-										<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-										<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-									</ul>
-								</div>
-							</div>
+	
 						</div>
 						<div class="col-lg-12">
-							<div class="news-tracker-wrap">
-								<h6><span>Breaking News:</span>   <a href="#">Astronomy Binoculars A Great Alternative</a></h6>
-							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- End top-post Area -->
+
+
+
 			<!-- Start latest-post Area -->
 			<section class="latest-post-area pb-120">
 				<div class="container no-padding">
 					<div class="row">
 						<div class="col-lg-8 post-list">
 							<!-- Start latest-post Area -->
-							<div class="latest-post-wrap">
-								<h4 class="cat-title">Latest News</h4>
+						<div class="latest-post-wrap">
+								<h4 class="cat-title">Berita Terbaru</h4>
+								<?php foreach($berita as $r){ ?>
 								<div class="single-latest-post row align-items-center">
 									<div class="col-lg-5 post-left">
 										<div class="feature-img relative">
 											<div class="overlay overlay-bg"></div>
-											<img class="img-fluid" src="<?php echo base_url() ?>assets/img/l1.jpg" alt="">
+											<img class="img-fluid" src="<?php echo base_url() ?>assets/img/berita/<?= $r->foto_berita; ?>" alt="">
 										</div>
 										<ul class="tags">
-											<li><a href="#">Lifestyle</a></li>
+											<li><a href="#">Berita</a></li>
 										</ul>
 									</div>
 									<div class="col-lg-7 post-right">
-										<a href="image-post.html">
-											<h4>A Discount Toner Cartridge Is
-											Better Than Ever.</h4>
+										<a href="<?= site_url() ?>/post/detail/<?= $r->id_berita; ?>">
+											<h4><?= $r->judul_berita; ?></h4>
 										</a>
 										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
+											<li><a href="#"><span class="lnr lnr-user"></span><?= $r->nama_admin; ?></a></li>
+											<li><a href="#"><span class="lnr lnr-calendar-full"></span><?= $r->tanggal_berita; ?></a></li>
+										
 										</ul>
 										<p class="excert">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+											<?= substr($r->isi_berita,0,100); ?>
 										</p>
 									</div>
 								</div>
-								<div class="single-latest-post row align-items-center">
-									<div class="col-lg-5 post-left">
-										<div class="feature-img relative">
-											<div class="overlay overlay-bg"></div>
-											<img class="img-fluid" src="<?php echo base_url() ?>assets/img/l2.jpg" alt="">
-										</div>
-										<ul class="tags">
-											<li><a href="#">Science</a></li>
-										</ul>
-									</div>
-									<div class="col-lg-7 post-right">
-										<a href="image-post.html">
-											<h4>A Discount Toner Cartridge Is
-											Better Than Ever.</h4>
-										</a>
-										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-										</ul>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-										</p>
-									</div>
-								</div>
-								<div class="single-latest-post row align-items-center">
-									<div class="col-lg-5 post-left">
-										<div class="feature-img relative">
-											<div class="overlay overlay-bg"></div>
-											<img class="img-fluid" src="<?php echo base_url() ?>assets/img/l3.jpg" alt="">
-										</div>
-										<ul class="tags">
-											<li><a href="#">Travel</a></li>
-										</ul>
-									</div>
-									<div class="col-lg-7 post-right">
-										<a href="image-post.html">
-											<h4>A Discount Toner Cartridge Is
-											Better Than Ever.</h4>
-										</a>
-										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-										</ul>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-										</p>
-									</div>
-								</div>
-								<div class="single-latest-post row align-items-center">
-									<div class="col-lg-5 post-left">
-										<div class="feature-img relative">
-											<div class="overlay overlay-bg"></div>
-											<img class="img-fluid" src="<?php echo base_url() ?>assets/img/l4.jpg" alt="">
-										</div>
-										<ul class="tags">
-											<li><a href="#">Fashion</a></li>
-										</ul>
-									</div>
-									<div class="col-lg-7 post-right">
-										<a href="image-post.html">
-											<h4>A Discount Toner Cartridge Is
-											Better Than Ever.</h4>
-										</a>
-										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-										</ul>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-										</p>
-									</div>
-								</div>
-							</div>
+							<?php } ?>
+						</div>
 							<!-- End latest-post Area -->
 							
 							<!-- Start banner-ads Area -->
@@ -213,321 +156,59 @@
 							<!-- End banner-ads Area -->
 							<!-- Start popular-post Area -->
 							<div class="popular-post-wrap">
-								<h4 class="title">Popular Posts</h4>
-								<div class="feature-post relative">
-									<div class="feature-img relative">
-										<div class="overlay overlay-bg"></div>
-										<img class="img-fluid" src="<?php echo base_url() ?>assets/img/f1.jpg" alt="">
-									</div>
-									<div class="details">
-										<ul class="tags">
-											<li><a href="#">Food Habit</a></li>
-										</ul>
-										<a href="image-post.html">
-											<h3>A Discount Toner Cartridge Is Better Than Ever.</h3>
-										</a>
-										<ul class="meta">
-											<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-											<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-											<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="row mt-20 medium-gutters">
-									<div class="col-lg-6 single-popular-post">
-										<div class="feature-img-wrap relative">
-											<div class="feature-img relative">
-												<div class="overlay overlay-bg"></div>
-												<img class="img-fluid" src="<?php echo base_url() ?>assets/img/f2.jpg" alt="">
-											</div>
-											<ul class="tags">
-												<li><a href="#">Travel</a></li>
-											</ul>
-										</div>
-										<div class="details">
-											<a href="image-post.html">
-												<h4>A Discount Toner Cartridge Is
-												Better Than Ever.</h4>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
-											</ul>
-											<p class="excert">
-												Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
-											</p>
-										</div>
-									</div>
-									<div class="col-lg-6 single-popular-post">
-										<div class="feature-img-wrap relative">
-											<div class="feature-img relative">
-												<div class="overlay overlay-bg"></div>
-												<img class="img-fluid" src="<?php echo base_url() ?>assets/img/f3.jpg" alt="">
-											</div>
-											<ul class="tags">
-												<li><a href="#">Travel</a></li>
-											</ul>
-										</div>
-										<div class="details">
-											<a href="image-post.html">
-												<h4>A Discount Toner Cartridge Is
-												Better Than Ever.</h4>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
-											</ul>
-											<p class="excert">
-												Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
-											</p>
-										</div>
-									</div>
-								</div>
+								<h4 class="title">Dokumen Kami</h4>
+						
 							</div>
 							<!-- End popular-post Area -->
-							<!-- Start relavent-story-post Area -->
-							<div class="relavent-story-post-wrap mt-30">
-								<h4 class="title">Relavent Stories</h4>
-								<div class="relavent-story-list-wrap">
-									<div class="single-relavent-post row align-items-center">
-										<div class="col-lg-5 post-left">
-											<div class="feature-img relative">
-												<div class="overlay overlay-bg"></div>
-												<img class="img-fluid" src="<?php echo base_url() ?>assets/img/r1.jpg" alt="">
-											</div>
-											<ul class="tags">
-												<li><a href="#">Lifestyle</a></li>
-											</ul>
-										</div>
-										<div class="col-lg-7 post-right">
-											<a href="image-post.html">
-												<h4>A Discount Toner Cartridge Is
-												Better Than Ever.</h4>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-											</ul>
-											<p class="excert">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-											</p>
-										</div>
-									</div>
-									<div class="single-relavent-post row align-items-center">
-										<div class="col-lg-5 post-left">
-											<div class="feature-img relative">
-												<div class="overlay overlay-bg"></div>
-												<img class="img-fluid" src="<?php echo base_url() ?>assets/img/r2.jpg" alt="">
-											</div>
-											<ul class="tags">
-												<li><a href="#">Science</a></li>
-											</ul>
-										</div>
-										<div class="col-lg-7 post-right">
-											<a href="image-post.html">
-												<h4>A Discount Toner Cartridge Is
-												Better Than Ever.</h4>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-											</ul>
-											<p class="excert">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-											</p>
-										</div>
-									</div>
-									<div class="single-relavent-post row align-items-center">
-										<div class="col-lg-5 post-left">
-											<div class="feature-img relative">
-												<div class="overlay overlay-bg"></div>
-												<img class="img-fluid" src="<?php echo base_url() ?>assets/img/r3.jpg" alt="">
-											</div>
-											<ul class="tags">
-												<li><a href="#">Travel</a></li>
-											</ul>
-										</div>
-										<div class="col-lg-7 post-right">
-											<a href="image-post.html">
-												<h4>A Discount Toner Cartridge Is
-												Better Than Ever.</h4>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06 Comments</a></li>
-											</ul>
-											<p class="excert">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- End relavent-story-post Area -->
 						</div>
 						<div class="col-lg-4">
 							<div class="sidebars-area">
 								<div class="single-sidebar-widget editors-pick-widget">
-									<h6 class="title">Editor’s Pick</h6>
+									<h6 class="title">Produk Kami</h6>
 									<div class="editors-pick-post">
+										<?php foreach($produklast as $p){ ?>
 										<div class="feature-img-wrap relative">
 											<div class="feature-img relative">
 												<div class="overlay overlay-bg"></div>
-												<img class="img-fluid" src="<?php echo base_url() ?>assets/img/e1.jpg" alt="">
+												<img class="img-fluid" src="<?php echo $url_produk ?>assets/images/produk/<?= $p->foto1; ?>" alt="Produk Sanan">
 											</div>
 											<ul class="tags">
-												<li><a href="#">Travel</a></li>
+												<li><a href="#">Produk</a></li>
 											</ul>
 										</div>
 										<div class="details">
-											<a href="image-post.html">
-												<h4 class="mt-20">A Discount Toner Cartridge Is
-												Better Than Ever.</h4>
+											<a href="<?=$url_produk ?>index.php/detail/id/<?= $p->id_produk; ?>">
+												<h4 class="mt-20"><?= $p->nama_produk; ?></h4>
 											</a>
 											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-user"></span>Mark wiens</a></li>
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06 </a></li>
+												<li><a href="#"><span class="lnr lnr-cart"></span>Stok : <?= $p->stok_produk; ?></a></li>
+												<li><a href="#"><span class="lnr lnr-cart"></span>Rp. <?= $p->harga_produk; ?></a></li>
 											</ul>
-											<p class="excert">
-												Lorem ipsum dolor sit amet, consecteturadip isicing elit, sed do eiusmod tempor incididunt ed do eius.
-											</p>
 										</div>
+										<?php } ?>
 										<div class="post-lists">
+										<?php foreach($produk as $p){ ?>
 											<div class="single-post d-flex flex-row">
 												<div class="thumb">
-													<img src="<?php echo base_url() ?>assets/img/e2.jpg" alt="">
+													<img src="<?php echo $url_produk ?>assets/images/produk/<?= $p->foto1; ?>" alt="Produk Sanan">
 												</div>
 												<div class="detail">
-													<a href="image-post.html"><h6>Help Finding Information
-													Online is so easy</h6></a>
+													<a href="<?=$url_produk ?>index.php/detail/id/<?= $p->id_produk; ?>"><h6><?= $p->nama_produk; ?></h6></a>
 													<ul class="meta">
-														<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-														<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
-													</ul>
+												<li><a href="#"><span class="lnr lnr-cart"></span>Stok : <?= $p->stok_produk; ?></a></li>
+												<li><a href="#"><span class="lnr lnr-cart"></span>Rp. <?= $p->harga_produk; ?></a></li>
+											</ul>
 												</div>
 											</div>
-											<div class="single-post d-flex flex-row">
-												<div class="thumb">
-													<img src="<?php echo base_url() ?>assets/img/e3.jpg" alt="">
-												</div>
-												<div class="detail">
-													<a href="image-post.html"><h6>Compatible Inkjet Cartr
-													world famous</h6></a>
-													<ul class="meta">
-														<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-														<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="single-post d-flex flex-row">
-												<div class="thumb">
-													<img src="<?php echo base_url() ?>assets/img/e4.jpg" alt="">
-												</div>
-												<div class="detail">
-													<a href="image-post.html"><h6>5 Tips For Offshore Soft
-													Development </h6></a>
-													<ul class="meta">
-														<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-														<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
-													</ul>
-												</div>
-											</div>
+										<?php } ?>
 										</div>
 									</div>
 								</div>
 								<div class="single-sidebar-widget ads-widget">
 									<img class="img-fluid" src="<?php echo base_url() ?>assets/img/sidebar-ads.jpg" alt="">
 								</div>
-								<div class="single-sidebar-widget newsletter-widget">
-									<h6 class="title">Newsletter</h6>
-									<p>
-										Here, I focus on a range of items
-										andfeatures that we use in life without
-										giving them a second thought.
-									</p>
-									<div class="form-group d-flex flex-row">
-										<div class="col-autos">
-											<div class="input-group">
-												<input class="form-control" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" type="text">
-											</div>
-										</div>
-										<a href="#" class="bbtns">Subcribe</a>
-									</div>
-									<p>
-										You can unsubscribe us at any time
-									</p>
-								</div>
-								<div class="single-sidebar-widget most-popular-widget">
-									<h6 class="title">Most Popular</h6>
-									<div class="single-list flex-row d-flex">
-										<div class="thumb">
-											<img src="<?php echo base_url() ?>assets/img/m1.jpg" alt="">
-										</div>
-										<div class="details">
-											<a href="image-post.html">
-												<h6>Help Finding Information
-												Online is so easy</h6>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="single-list flex-row d-flex">
-										<div class="thumb">
-											<img src="<?php echo base_url() ?>assets/img/m2.jpg" alt="">
-										</div>
-										<div class="details">
-											<a href="image-post.html">
-												<h6>Compatible Inkjet Cartr
-												world famous</h6>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="single-list flex-row d-flex">
-										<div class="thumb">
-											<img src="<?php echo base_url() ?>assets/img/m3.jpg" alt="">
-										</div>
-										<div class="details">
-											<a href="image-post.html">
-												<h6>5 Tips For Offshore Soft
-												Development </h6>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="single-list flex-row d-flex">
-										<div class="thumb">
-											<img src="<?php echo base_url() ?>assets/img/m4.jpg" alt="">
-										</div>
-										<div class="details">
-											<a href="image-post.html">
-												<h6>5 Tips For Offshore Soft
-												Development </h6>
-											</a>
-											<ul class="meta">
-												<li><a href="#"><span class="lnr lnr-calendar-full"></span>03 April, 2018</a></li>
-												<li><a href="#"><span class="lnr lnr-bubble"></span>06</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
 								<div class="single-sidebar-widget social-network-widget">
-									<h6 class="title">Social Networks</h6>
+									<h6 class="title">Temukan Kami</h6>
 									<ul class="social-list">
 										<li class="d-flex justify-content-between align-items-center fb">
 											<div class="icons d-flex flex-row align-items-center">
@@ -566,7 +247,62 @@
 			</section>
 			<!-- End latest-post Area -->
 		</div>
-		
+		<script type="text/javascript">
+			(function() {
+	
+			function Slideshow( element ) {
+				this.el = document.querySelector( element );
+				this.init();
+			}
+			
+			Slideshow.prototype = {
+				init: function() {
+					this.wrapper = this.el.querySelector( ".slider-wrapper" );
+					this.slides = this.el.querySelectorAll( ".slide" );
+					this.previous = this.el.querySelector( ".slider-previous" );
+					this.next = this.el.querySelector( ".slider-next" );
+					this.index = 0;
+					this.total = this.slides.length;
+					this.timer = null;
+					this.action();
+					this.stopStart();	
+				},
+				_slideTo: function( slide ) {
+					var currentSlide = this.slides[slide];
+					currentSlide.style.opacity = 1;
+					for( var i = 0; i < this.slides.length; i++ ) {
+						var slide = this.slides[i];
+						if( slide !== currentSlide ) {
+							slide.style.opacity = 0;
+						}
+					}
+				},
+				action: function() {
+					var self = this;
+					self.timer = setInterval(function() {
+						self.index++;
+						if( self.index == self.slides.length ) {
+							self.index = 0;
+						}
+						self._slideTo( self.index );
+					}, 3000);
+				},
+				stopStart: function() {
+					var self = this;
+					self.el.addEventListener( "mouseover", function() {
+						clearInterval( self.timer );
+						self.timer = null;
+					}, false);
+					self.el.addEventListener( "mouseout", function() {
+						self.action();
+					}, false);
+				}
+			};
+			document.addEventListener( "DOMContentLoaded", function() {
+				var slider = new Slideshow( "#main-slider" );
+			});	
+		})();
+				</script>
 		<?php 
 			include 'footer.php';
 			include 'alljs.php'
