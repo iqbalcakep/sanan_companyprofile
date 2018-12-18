@@ -44,7 +44,7 @@ class Contact extends CI_Controller {
         $this->email->from($from_email, $name);
 
         // Email penerima
-        $this->email->to('iqbalacakep.com@gmail.com'); // Ganti dengan email tujuan kamu
+        $this->email->to('kripiksanan@gmail.com'); // Ganti dengan email tujuan kamu
 
         // Lampiran email, isi dengan url/path file
 

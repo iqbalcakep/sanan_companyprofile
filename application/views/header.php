@@ -12,8 +12,8 @@
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-6 header-top-right no-padding">
 					<ul>
-						<li><a href="tel:+440 012 3654 896"><span class="lnr lnr-phone-handset"></span><span>+62 012 3654 896</span></a></li>
-						<li><a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span><span>sanan@gmail.com</span></a></li>
+						<li><a href="tel:+440 012 3654 896"><span class="lnr lnr-phone-handset"></span><span>0815-5963-2090</span></a></li>
+						<li><a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span><span>Kripiksanan@gmail.com</span></a></li>
 					</ul>
 				</div>
 			</div>

@@ -14,27 +14,14 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Contact Us - Sanan Tempe</title>
+		<title>Hubungi Kami - Sanan Tempe</title>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 		<?php include 'allcss.php' ?>
 	</head>
 	<body>
 		<?php include 'header.php' ?>
 		<div class="site-main-container">
-			<!-- Start top-post Area -->
-			<section class="top-post-area pt-10">
-				<div class="container no-padding">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="hero-nav-area">
-								<h1 class="text-white">Silahkan Hubungi Kami </h1>
-								<p class="text-white link-nav"><a href="#">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="#">Hubungi Kami</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End top-post Area -->
+			
 			<!-- Start contact-page Area -->
 			<section class="contact-page-area pt-50 pb-120">
 				<div class="container">
@@ -51,7 +38,7 @@
 								<div class="contact-details">
 									<h5>Malang, Indonesia</h5>
 									<p>
-										Jl Gak tau
+										JL. SANAN GG. III NO.168, PURWANTORO, BLIMBING, KOTA MALANG, JAWA TIMUR 65126
 									</p>
 								</div>
 							</div>
@@ -60,7 +47,7 @@
 									<span class="lnr lnr-phone-handset"></span>
 								</div>
 								<div class="contact-details">
-									<h5>0823647589</h5>
+									<h5>0815-5963-2090</h5>
 									<p>Setiap hari 07.00 - 21.00</p>
 								</div>
 							</div>
@@ -69,7 +56,7 @@
 									<span class="lnr lnr-envelope"></span>
 								</div>
 								<div class="contact-details">
-									<h5>admin@sanantempe.com</h5>
+									<h5>kripiksanan@gmail.com</h5>
 									<p>Kirim keluhan Anda</p>
 								</div>
 							</div>

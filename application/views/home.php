@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Home - Sanan Tempe</title>
+		<title>Beranda - Sanan Tempe</title>
 		<style type="text/css">
 			.slider {
 /*			width: 1024px;
