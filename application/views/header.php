@@ -42,8 +42,8 @@
 					<li><a href="#">Penjualan</a></li>
 					<li class="menu-has-children"><a href="">Galeri</a>
 						<ul>
-							<li><a href="<?php echo base_url() ?>index.php/galerifoto">Galeri Foto</a></li>
-							<li><a href="<?php echo base_url() ?>index.php/galerivideo">Galeri Video</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/galeriFoto">Galeri Foto</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/galeriVideo">Galeri Video</a></li>
 						</ul>
 					</li>
 					<li><a href="<?php echo base_url() ?>index.php/about">Tentang Kami</a></li>
@@ -51,7 +51,8 @@
 				</ul>
 			</nav><!-- #nav-menu-container -->
 			<div class="navbar-right">
-				<form class="Search">
+			<?= form_open('Search/detail','class="Search"'); ?>
+				
 					<input type="text" class="form-control Search-box" name="Search-box" id="Search-box" placeholder="Search">
 					<label for="Search-box" class="Search-box-label">
 						<span class="lnr lnr-magnifier"></span>
@@ -59,7 +60,9 @@
 					<span class="Search-close">
 						<span class="lnr lnr-cross"></span>
 					</span>
-				</form>
+				
+				
+				<?= form_close(); ?>
 			</div>
 		</div>
 	</div>

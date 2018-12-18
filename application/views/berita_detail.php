@@ -29,13 +29,8 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="hero-nav-area">
-								<h1 class="text-white">Image Post</h1>
-								<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="#">Post Types </a><span class="lnr lnr-arrow-right"></span><a href="image-post.html">Image Post </a></p>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="news-tracker-wrap">
-								<h6><span>Breaking News:</span>   <a href="#">Astronomy Binoculars A Great Alternative</a></h6>
+								<h1 class="text-white">Berita Kami</h1>
+								<p class="text-white link-nav"><a href="#">Home </a>  <span class="lnr lnr-arrow-right"></span><a href="#">Berita </a></p>
 							</div>
 						</div>
 					</div>

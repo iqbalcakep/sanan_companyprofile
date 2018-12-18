@@ -22,5 +22,14 @@ class Berita_model extends CI_Model {
         return $data;
     }
 
+    public function getBeritaPencarian($cari){
+        $this->db->select("*");
+        $this->db->from("sanan_berita as b");
+        $this->db->join("sanan_admin as a","b.id_admin = a.id_admin");
+        $this->db->like('judul_berita', $cari, 'both');
+        $data = $this->db->get()->result();
+        return $data;
+    }
+
 
 }
